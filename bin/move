@@ -5,4 +5,4 @@ require "rubygems"
 require "thor"
 require "movement/commands"
 
-Movement::Commands.start
+Movement::Commands::Core.start
