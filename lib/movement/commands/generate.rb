@@ -5,6 +5,7 @@ module Movement
 
       argument :generator
       argument :name
+      class_option :destination_root, default: "app"
 
       def self.source_root
         File.dirname(__FILE__)
@@ -12,7 +13,7 @@ module Movement
 
       def generate
         if generator == "view"
-          template("templates/UIView.tt", "app/views/#{name}.rb")
+          template("templates/UIView.tt", "#{options[:destination_root]}/views/#{name}.rb")
         end
       end
     end
