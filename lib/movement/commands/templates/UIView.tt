@@ -1,4 +1,4 @@
-class <%= name.capitalize %> < UIView
+class <%= name.camelize %> < UIView
   def init
     super
 
