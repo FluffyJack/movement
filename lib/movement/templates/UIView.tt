@@ -1,0 +1,7 @@
+class <%= name.capitalize %> < UIView
+  def init
+    super
+
+    self
+  end
+end
